@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+p {
+  margin: 0px;
+}
+
+.layout {
+  max-width: 1092px !important;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.font-tomorrow {
+  font-family: "Tomorrow", sans-serif;
+}
+
+.font-Bebas {
+  font-family: "Bebas Neue", cursive;
+}
+
+.background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-image: url("/assets/images/png/header-bg.png");
+}
+
+.nav-link {
+  width: 97px;
+}
+
+.menu-btn:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.close-btn {
+  top: 20px;
+  right: 20px;
+}
+
+button {
+  white-space: nowrap;
+}
+
+.hero-section {
+  padding: 151px 0px 152px 0px;
+}
+
+.comman-button {
+  background-color: var(--color-Sky-Blue);
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  width: 186px;
+  height: 46px;
+  border-radius: 45px;
+  border: 1px solid var(--color-Sky-Blue);
+  animation-duration: 10ms;
+}
+
+.comman-button:hover {
+  background-color: transparent;
+  color: var(--color-Sky-Blue);
+}
+
+.popular-section {
+  background-image: url(/assets/images/png/popular-section-bg.png);
+  padding: 55px 12px 70px 12px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: var(--fs-3xl);
+  color: white;
+  line-height: 40px;
+}
+
+.popular-card {
+  max-width: 348px;
+  width: 100%;
+  background-color: #475c83;
+  border-radius: 16px;
+  border: 1px solid #969696;
+  opacity: 0.55;
+  padding: 26px 0px 23px 11px;
+}
+
+.w-192 {
+  width: 230px;
+  padding-bottom: 14px;
+}
+
+.card-content {
+  line-height: 18px;
+  letter-spacing: 0.14px;
+  max-width: 296px;
+}
+
+.build-section {
+  background-image: url(/assets/images/png/build-section-bg.png);
+  padding: 42px 14px 59px 14px;
+}
+
+.build-card {
+  max-width: 348px;
+  width: 100%;
+  background-color: black;
+  border-radius: 16px;
+  border: 1px solid #313131;
+  padding: 26px 0px 23px 11px;
+}
+
+.api-references-section {
+  background-image: url(/assets/images/png/api-references-section-bg.png);
+  padding: 56px 12px 75px 12px;
+}
+
+.api-references-box {
+  max-width: 695px;
+  width: 100%;
+  margin: auto;
+  margin-top: 54px;
+}
+
+.all-chains {
+  gap: 60px;
+}
+
+.all-chains div img {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+}
+
+.w-92 {
+  width: 92px;
+  letter-spacing: 2px;
+  line-height: 16px;
+}
+
+.case-apis-section {
+  background-image: url(/assets/images/png/case-apis-section-bg.png);
+  padding: 49px 12px 65px 12px;
+}
+
+.case-apis-box {
+  padding-bottom: 25px;
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 139px 0px 144px 0px;
+  }
+  .nav-link {
+    width: fit-content !important;
+  }
+  .comman-button {
+    font-weight: 500;
+    width: 146px;
+    height: 36px;
+  }
+  .all-chains {
+    gap: 40px;
+  }
+  .api-references-box {
+    margin-top: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 129px 0px 114px 0px;
+  }
+  .comman-button {
+    width: 116px;
+  }
+  .popular-section {
+    padding: 42px 12px 47px 12px;
+  }
+  .popular-card {
+    padding: 15px 0px 12px 11px;
+  }
+  .build-card {
+    padding: 15px 0px 12px 11px;
+  }
+  .build-section {
+    padding: 42px 14px 47px 14px;
+  }
+  .all-chains {
+    gap: 20px;
+  }
+  .api-references-section {
+    padding: 34px 12px 34px 12px;
+  }
+  .case-apis-section {
+    padding: 42px 12px 39px 12px;
+  }
+  .trusted-by svg {
+    width: 79px;
+    height: 29px;
+  }
+}
