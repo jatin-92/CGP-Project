@@ -13,7 +13,9 @@ p {
   margin: 0px;
 }
 
-.layout {
+/* centered-container */
+
+.centered-container {
   max-width: 1092px !important;
   width: 100%;
   margin: auto;
@@ -24,11 +26,11 @@ p {
   font-family: "Tomorrow", sans-serif;
 }
 
-.font-Bebas {
+.font-bebas {
   font-family: "Bebas Neue", cursive;
 }
 
-.background {
+.background-style {
   background-size: cover !important;
   background-position: center;
   background-repeat: no-repeat !important;
@@ -42,9 +44,21 @@ header {
   width: 97px;
 }
 
+.custom-btn:hover {
+  background-color: var(--color-sky-blue) !important;
+  color: black !important;
+  border: 1px solid var(--color-sky-blue) !important;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border 0.5s ease-in-out;
+}
+
 .menu-btn:focus {
   border: none !important;
   box-shadow: none !important;
+}
+
+.background-black {
+  background: rgba(0, 0, 0, 0.77) !important;
 }
 
 .close-btn {
@@ -57,11 +71,11 @@ button {
 }
 
 .hero-section {
-  padding: 151px 0px 152px 0px;
+  padding: 145px 0px 158px 0px;
 }
 
-.comman-button {
-  background-color: var(--color-Sky-Blue);
+.common-button {
+  background-color: var(--color-sky-blue);
   color: black;
   text-align: center;
   font-weight: 600;
@@ -69,18 +83,25 @@ button {
   width: 186px;
   height: 46px;
   border-radius: 45px;
-  border: 1px solid var(--color-Sky-Blue);
-  animation-duration: 10ms;
+  border: 1px solid var(--color-sky-blue);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-.comman-button:hover {
+.common-button:hover {
   background-color: transparent;
-  color: var(--color-Sky-Blue);
+  color: var(--color-sky-blue);
 }
 
 .popular-section {
   background-image: url(/assets/images/png/popular-section-bg.png);
-  padding: 55px 12px 70px 12px;
+  padding: 60px 12px 75px 12px;
+}
+
+.custom-container {
+  max-width: 1115px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 .section-title {
@@ -91,16 +112,14 @@ button {
 }
 
 .popular-card {
-  max-width: 348px;
-  width: 100%;
-  background-color: #475c83;
+  width: 30.333333%;
+  background-color: rgba(71, 92, 131, 0.55);
   border-radius: 16px;
   border: 1px solid #969696;
-  opacity: 0.55;
   padding: 26px 0px 23px 11px;
 }
 
-.w-192 {
+.w-230 {
   width: 230px;
   padding-bottom: 14px;
 }
@@ -113,21 +132,20 @@ button {
 
 .build-section {
   background-image: url(/assets/images/png/build-section-bg.png);
-  padding: 42px 14px 59px 14px;
+  padding: 36px 14px 55px 14px;
 }
 
 .build-card {
-  max-width: 348px;
-  width: 100%;
+  width: 31.333333%;
   background-color: black;
   border-radius: 16px;
   border: 1px solid #313131;
-  padding: 26px 0px 23px 11px;
+  padding: 26px 10px 23px 11px;
 }
 
 .api-references-section {
   background-image: url(/assets/images/png/api-references-section-bg.png);
-  padding: 56px 12px 75px 12px;
+  padding: 51px 12px 74px 12px;
 }
 
 .api-references-box {
@@ -155,7 +173,7 @@ button {
 
 .case-apis-section {
   background-image: url(/assets/images/png/case-apis-section-bg.png);
-  padding: 49px 12px 65px 12px;
+  padding: 59px 12px 74px 12px;
 }
 
 .case-apis-box {
@@ -164,14 +182,14 @@ button {
 
 .join-section {
   background: url(/assets/images/png/join-section-bg.png);
-  padding: 47px 12px 40px 12px;
+  padding: 42px 12px 35px 12px;
 }
 
 footer {
   padding: 81px 12px 45px 12px;
 }
 
-.footer-layout {
+.footer-centered-container {
   max-width: 1115px;
   width: 100%;
   margin: auto;
@@ -192,7 +210,7 @@ footer {
   .nav-link {
     width: fit-content !important;
   }
-  .comman-button {
+  .common-button {
     font-weight: 500;
     width: 146px;
     height: 36px;
@@ -204,24 +222,26 @@ footer {
     margin-top: 27px;
   }
   .logo-div {
-  max-width: 999px;
-}
+    max-width: 999px;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-section {
     padding: 129px 0px 114px 0px;
   }
-  .comman-button {
+  .common-button {
     width: 116px;
   }
   .popular-section {
     padding: 42px 12px 47px 12px;
   }
   .popular-card {
-    padding: 15px 0px 12px 11px;
+    width: 48%;
+    padding: 15px 10px 12px 11px;
   }
   .build-card {
+    width: 48%;
     padding: 15px 0px 12px 11px;
   }
   .build-section {
@@ -244,6 +264,21 @@ footer {
     padding: 38px 12px 20px 12px;
   }
   footer {
-  padding: 20px 12px 20px 12px;
+    padding: 20px 12px 20px 12px;
+  }
 }
+
+@media (max-width: 575px) {
+  .popular-card {
+    width: 100%;
+  }
+  .build-card {
+    width: 100%;
+  }
+  .card-content {
+    max-width: 999px;
+  }
+  .w-230 {
+    width: 100%;
+  }
 }

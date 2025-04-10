@@ -7,7 +7,7 @@
   --fs-3xl: 40px;
   --fs-4xl: 65px;
 
-  --color-Sky-Blue: #36beff;
+  --color-sky-blue: #36beff;
 }
 
 .fs-sm {
@@ -33,7 +33,7 @@
 }
 
 .text-Sky-Blue {
-  color: var(--color-Sky-Blue);
+  color: var(--color-sky-blue);
 }
 
 @media (max-width: 767px) {
@@ -45,8 +45,6 @@
     --fs-2xl: 20px;
     --fs-3xl: 35px;
     --fs-4xl: 55px;
-
-    --color-Sky-Blue: #36beff;
   }
 }
 
@@ -58,7 +56,5 @@
     --fs-xl: 16px;
     --fs-2xl: 18px;
     --fs-4xl: 41px;
-
-    --color-Sky-Blue: #36beff;
   }
 }
