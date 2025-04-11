@@ -8,7 +8,12 @@
   --fs-4xl: 65px;
 
   --color-sky-blue: #36beff;
+  --color-light-gray: #9f9f9f;
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
+
+
 
 .fs-sm {
   font-size: var(--fs-sm);
@@ -32,8 +37,12 @@
   font-size: var(--fs-4xl);
 }
 
-.text-Sky-Blue {
+.text-sky-blue {
   color: var(--color-sky-blue);
+}
+
+.text-light-gray {
+  color: var(--color-light-gray);
 }
 
 @media (max-width: 767px) {

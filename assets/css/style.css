@@ -76,7 +76,7 @@ button {
 
 .common-button {
   background-color: var(--color-sky-blue);
-  color: black;
+  color: var(--color-black);
   text-align: center;
   font-weight: 600;
   font-size: var(--fs-sm);
@@ -105,9 +105,9 @@ button {
 }
 
 .section-title {
-  font-weight: 400;
+
   font-size: var(--fs-3xl);
-  color: white;
+  color: var(--color-white);
   line-height: 40px;
 }
 
@@ -115,7 +115,7 @@ button {
   width: 30.333333%;
   background-color: rgba(71, 92, 131, 0.55);
   border-radius: 16px;
-  border: 1px solid #969696;
+  border: 1px solid var(--color-light-gray);
   padding: 26px 0px 23px 11px;
 }
 
@@ -137,7 +137,7 @@ button {
 
 .build-card {
   width: 31.333333%;
-  background-color: black;
+  background-color: var(--color-black);
   border-radius: 16px;
   border: 1px solid #313131;
   padding: 26px 10px 23px 11px;
@@ -193,6 +193,10 @@ footer {
   max-width: 1115px;
   width: 100%;
   margin: auto;
+}
+
+.footer-link-box p {
+  text-decoration: underline;
 }
 
 .logo-div {
