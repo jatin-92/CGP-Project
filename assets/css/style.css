@@ -71,7 +71,7 @@ button {
 }
 
 .hero-section {
-  padding: 145px 0px 158px 0px;
+  padding: 136px 0px 153px 0px;
 }
 
 .common-button {
@@ -94,7 +94,7 @@ button {
 
 .popular-section {
   background-image: url(/assets/images/png/popular-section-bg.png);
-  padding: 60px 12px 75px 12px;
+  padding: 62px 12px 80px 12px;
 }
 
 .custom-container {
@@ -105,7 +105,6 @@ button {
 }
 
 .section-title {
-
   font-size: var(--fs-3xl);
   color: var(--color-white);
   line-height: 40px;
@@ -182,7 +181,7 @@ button {
 
 .join-section {
   background: url(/assets/images/png/join-section-bg.png);
-  padding: 42px 12px 35px 12px;
+  padding: 42px 12px 38px 12px;
 }
 
 footer {
